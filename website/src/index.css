@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #f7931a;
+  --color-brand-dark: #dc7a08;
+  --color-brand-light: #fff6e8;
+  --color-navy: #0c2d4a;
+  --color-navy-deep: #071e33;
+  --color-navy-mid: #123a5c;
+  --color-ink: #152033;
+  --color-muted: #5b6778;
+  --color-line: #e6eef5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: #f6f9fc;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #f7931a;
+  color: #fff;
+}
+
+.hero-blob {
+  background:
+    radial-gradient(circle at 30% 20%, #1a5a86 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, #0a3a5c 0%, transparent 45%),
+    linear-gradient(145deg, #0c3a5c 0%, #071e33 100%);
+}
+
+.page-banner {
+  background:
+    linear-gradient(100deg, rgba(7, 30, 51, 0.92) 0%, rgba(12, 45, 74, 0.78) 55%, rgba(12, 45, 74, 0.55) 100%),
+    var(--banner-image) center / cover no-repeat;
+}
+
+.input-field {
+  @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink outline-none transition placeholder:text-slate-400 focus:border-brand focus:ring-2 focus:ring-brand/20;
+}
+
+.card-hover {
+  @apply transition duration-300 hover:-translate-y-1.5 hover:shadow-xl;
+}
