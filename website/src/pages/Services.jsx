@@ -75,7 +75,10 @@ export default function Services() {
           <Reveal className="text-center">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">Mold Expertise</p>
             <h2 className="mt-2 text-3xl font-extrabold text-navy">Types of Mold We Treat</h2>
-            <p className="mt-2 text-muted">Top 4 most common types of mold found in homes and offices</p>
+            <p className="mt-2 text-muted">
+              Ten common mold types in homes and offices — where they grow, health risks, and how we remediate
+              them safely.
+            </p>
           </Reveal>
           <div className="mt-14">
             <MoldTypes />

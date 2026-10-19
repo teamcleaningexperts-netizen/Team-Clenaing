@@ -2,6 +2,8 @@ export const company = {
   name: 'Team Cleaning Experts',
   phone: '+91 7996688885',
   phoneHref: 'tel:+917996688885',
+  whatsappHref:
+    'https://wa.me/917996688885?text=Hi%20Team%20Cleaning%20Experts%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service.',
   email: 'service@teamcleaningexperts.in',
   emailHref: 'mailto:service@teamcleaningexperts.in',
   address: '203, 2nd floor, near MSIL, Panathur Post, Bangalore, Karnataka 560087',
@@ -124,6 +126,60 @@ export const services = [
     image: '/images/mold.jpg',
     featured: true,
   },
+  {
+    id: 'black-mold-remediation',
+    title: 'Black Mold (Stachybotrys) Remediation',
+    short: 'Safe removal of toxic black mold',
+    description:
+      'Contained removal of Stachybotrys from drywall and ceilings after floods or leaks — reduces breathing problems, headaches and serious allergy risks.',
+    icon: 'droplets',
+    image: '/images/mold.jpg',
+  },
+  {
+    id: 'aspergillus-mold-treatment',
+    title: 'Aspergillus Mold Treatment',
+    short: 'Ducts, walls and HVAC mold care',
+    description:
+      'Targets Aspergillus in AC ducts and damp walls to ease wheezing, sinus issues and long-term respiratory irritation.',
+    icon: 'droplets',
+    image: '/images/mold.jpg',
+  },
+  {
+    id: 'penicillium-mold-remediation',
+    title: 'Penicillium Mold Remediation',
+    short: 'Bedrooms, storage and wallpaper mold',
+    description:
+      'Clears Penicillium from mattresses, boxes and wallpaper to stop hay fever symptoms, asthma flare-ups and musty odours.',
+    icon: 'droplets',
+    image: '/images/mold.jpg',
+  },
+  {
+    id: 'fusarium-mold-cleanup',
+    title: 'Fusarium Mold Cleanup',
+    short: 'Flooded floors and carpet mold',
+    description:
+      'Remediates Fusarium after water damage on carpets and subfloors — lowers risk of skin, eye and respiratory irritation.',
+    icon: 'droplets',
+    image: '/images/mold.jpg',
+  },
+  {
+    id: 'aureobasidium-mold-removal',
+    title: 'Aureobasidium Mold Removal',
+    short: 'Window frames and painted walls',
+    description:
+      'Treats dark spots behind paint and wallpaper to prevent skin rashes, eye irritation and recurring allergy symptoms.',
+    icon: 'droplets',
+    image: '/images/mold.jpg',
+  },
+  {
+    id: 'trichoderma-mold-remediation',
+    title: 'Trichoderma Mold Remediation',
+    short: 'Wood, cabinets and crawl spaces',
+    description:
+      'Stops Trichoderma on joists and wet wood to protect air quality, reduce cough and fatigue, and prevent structural damage.',
+    icon: 'droplets',
+    image: '/images/mold.jpg',
+  },
 ]
 
 export const values = [
@@ -188,40 +244,158 @@ export const moldTypes = [
     number: '01',
     name: 'Alternaria',
     title: 'Alternaria Mold',
-    text: 'You can typically find this mold in showers, bathtubs, and below sinks. It often signifies water damage, and it spreads quickly. Has a velvety texture with dark green or brown hairs.',
-    risk: 'Symptoms of asthma',
+    text: 'Common in showers, bathtubs, window frames and under sinks where moisture collects. Velvety dark green or brown growth that spreads quickly and often points to ongoing water damage.',
+    healthIssues: [
+      'Worsening asthma and frequent asthma attacks, especially in children and elderly people',
+      'Allergic rhinitis — sneezing, blocked nose, itchy eyes and throat irritation',
+      'Skin rashes and hives on contact in sensitive individuals',
+      'Upper respiratory infections when exposure continues in damp bathrooms or kitchens',
+    ],
+    service:
+      'We isolate the affected wet areas, remove contaminated grout or sealants where needed, HEPA-vacuum spores and treat surfaces to reduce regrowth after leaks are fixed.',
     image: '/mold-01.jpg',
   },
   {
     number: '02',
     name: 'Chaetomium',
     title: 'Chaetomium Mold',
-    text: 'Normally in buildings that are very water-damaged, specifically your roof, basement, pipes, and drywall. Watch out for a musty smell. This cotton-like textured mold usually begins as white in color, and eventually darkens with time, from gray to brown to black.',
-    risk: 'Skin and nail infections',
+    text: 'Thrives in heavily water-damaged buildings — roofs, basements, burst pipes and soaked drywall. Cotton-like texture; starts white and turns gray, brown or black. A strong musty odour is a common warning sign.',
+    healthIssues: [
+      'Skin and nail fungal infections with prolonged contact',
+      'Eye, nose and throat irritation from airborne spores',
+      'Headaches, fatigue and nausea in poorly ventilated spaces',
+      'Higher allergy risk for people with weakened immunity or chronic lung conditions',
+    ],
+    service:
+      'We trace the moisture source, remove unsalvageable drywall or insulation, contain the zone and professionally remediate before structural drying and prevention advice.',
     image: '/mold-02.jpg',
   },
   {
     number: '03',
     name: 'Cladosporium',
     title: 'Cladosporium Mold',
-    text: 'Found frequently in carpet, fabrics, upholsteries, wood floors, and cabinets. This type of mold is an olive-green or brown colored mold with a suede-like texture.',
-    risk: 'Respiratory and breathing issues',
+    text: 'Often found on carpets, fabrics, upholstery, wooden floors and inside cabinets. Olive-green or brown suede-like patches that can survive in cooler indoor areas, not only tropical humidity.',
+    healthIssues: [
+      'Chronic cough, wheezing and shortness of breath',
+      'Sinus congestion and recurring respiratory infections',
+      'Asthma flare-ups and bronchial hypersensitivity',
+      'Skin and eye irritation when spores settle on bedding or soft furnishings',
+    ],
+    service:
+      'We deep-clean or treat carpets and upholstery, sanitize wood and cabinet interiors, and improve airflow so spores do not return to fabric surfaces.',
     image: '/mold-03.jpg',
   },
   {
     number: '04',
     name: 'Mucor',
     title: 'Mucor Mold',
-    text: 'Normally found near leaky windows and doors where there is moisture from condensation. White or gray in color, grows in thick patches quickly.',
-    risk: 'Asthma and/or flu-like symptoms',
+    text: 'White or gray mold in thick patches near leaky windows, doors and AC drip trays where condensation builds. Grows fast when humidity stays above normal for several days.',
+    healthIssues: [
+      'Flu-like symptoms — fever, body aches, fatigue and chills',
+      'Asthma attacks and severe breathing difficulty in sensitive people',
+      'Facial swelling or sinus pain with heavy indoor exposure',
+      'Serious invasive infections are rare but more likely in immunocompromised individuals — urgent remediation is advised',
+    ],
+    service:
+      'We contain fast-spreading patches, remove contaminated materials, dry the structure and treat condensation points around windows, doors and HVAC lines.',
     image: '/mold-04.jpg',
+  },
+  {
+    number: '05',
+    name: 'Stachybotrys',
+    title: 'Stachybotrys (Black Mold)',
+    text: 'Often called “black mold.” Slimy black or dark green growth on cellulose-rich materials — drywall, ceiling tiles and cardboard — after long-term leaks or flooding that was not dried properly.',
+    healthIssues: [
+      'Persistent cough, chest tightness and difficulty breathing',
+      'Headaches, dizziness and trouble concentrating (sometimes described as “brain fog”)',
+      'Burning eyes, sore throat and skin irritation',
+      'Strong reactions in infants, elderly residents and anyone with asthma, COPD or immune disorders — professional removal is strongly recommended',
+    ],
+    service:
+      'Full containment, safe removal of affected drywall and porous items, antimicrobial treatment and moisture repair — our specialist black mold remediation protocol.',
+    image: '/mold-01.jpg',
+  },
+  {
+    number: '06',
+    name: 'Aspergillus',
+    title: 'Aspergillus Mold',
+    text: 'Very common indoors on dust, insulation, AC ducts and damp walls. Colours range from green and yellow to white or grey. Often linked to poor filtration or hidden duct moisture.',
+    healthIssues: [
+      'Allergic bronchopulmonary symptoms — wheezing, coughing and mucus production',
+      'Sinusitis and ear pressure from inhaling spores over time',
+      'Skin and lung irritation in people with existing allergies',
+      'In rare cases, invasive aspergillosis in severely immunocompromised patients — early duct and wall treatment reduces risk',
+    ],
+    service:
+      'Duct and HVAC assessment, HEPA filtration during work, remediation of colonized surfaces and guidance on filters and humidity control.',
+    image: '/mold-02.jpg',
+  },
+  {
+    number: '07',
+    name: 'Penicillium',
+    title: 'Penicillium Mold',
+    text: 'Blue, green or white fuzzy growth on food, wallpaper, mattresses and water-damaged mattresses or storage boxes. Spreads easily through the air in cluttered or poorly ventilated rooms.',
+    healthIssues: [
+      'Hay fever–type symptoms — sneezing, itchy eyes and nasal congestion',
+      'Chronic sinus inflammation and post-nasal drip',
+      'Asthma development or worsening in long-term exposure settings',
+      'Some species produce mycotoxins that can irritate lungs and immune response when concentrations are high indoors',
+    ],
+    service:
+      'Removal of contaminated porous items, surface treatment, dehumidification and storage-area organization to limit spore spread.',
+    image: '/mold-03.jpg',
+  },
+  {
+    number: '08',
+    name: 'Fusarium',
+    title: 'Fusarium Mold',
+    text: 'Pink, white or red patches on wet carpet, plant soil tracked indoors, humidifiers and flooded flooring. Often appears after appliance leaks or indoor plant over-watering near walls.',
+    healthIssues: [
+      'Eye infections (keratitis) and skin lesions with direct contact in vulnerable people',
+      'Respiratory irritation, sore throat and allergic lung inflammation',
+      'Onychomycosis (nail fungus) linked to damp floor contact',
+      'Increased risk of systemic infection only in severely immunosuppressed individuals — still requires prompt cleanup',
+    ],
+    service:
+      'Flooring and carpet remediation, drying subfloors, treating wall bases and fixing appliance or planter-related moisture sources.',
+    image: '/mold-04.jpg',
+  },
+  {
+    number: '09',
+    name: 'Aureobasidium',
+    title: 'Aureobasidium Mold',
+    text: 'Dark brown or black spots behind wallpaper, on painted window frames, wooden skirting and damp painted walls. Common when exterior paint fails or window seals leak silently.',
+    healthIssues: [
+      'Skin rash and dermatitis — often on hands and arms when scrubbing visible spots without protection',
+      'Eye and throat irritation from disturbed spores during DIY cleaning',
+      'Aggravation of asthma and seasonal allergies',
+      'Recurrent symptoms if wallpaper or paint layers are not properly treated and the wall stays damp',
+    ],
+    service:
+      'Careful removal of affected wallpaper or coatings, wall drying, antimicrobial treatment and resealing after moisture ingress is stopped.',
+    image: '/mold-01.jpg',
+  },
+  {
+    number: '10',
+    name: 'Trichoderma',
+    title: 'Trichoderma Mold',
+    text: 'White or green woolly mold on wet wood, subfloor joists, cabinetry and wallpaper glue. Frequently follows slow leaks in kitchens, bathrooms and service ducts.',
+    healthIssues: [
+      'Persistent cough and lung irritation from high spore counts in enclosed crawl spaces',
+      'Sinus and allergy symptoms in occupants above affected floors',
+      'Some strains release strong odours and enzymes that damage wood, weakening floors and frames over time',
+      'Workers or residents with mold sensitivity may experience fatigue and headaches until remediation is complete',
+    ],
+    service:
+      'Structural wood assessment, remediation in crawl spaces and cabinets, wood treatment and long-term moisture monitoring recommendations.',
+    image: '/mold-02.jpg',
   },
 ]
 
 export const faqs = [
   {
     q: 'What types of cleaning services do you offer?',
-    a: 'We offer home cleaning, office cleaning, deep cleaning, sofa & carpet cleaning, glass & window cleaning, sanitization and specialist mold remediation for residential and commercial spaces.',
+    a: 'We offer home cleaning, office cleaning, deep cleaning, sofa & carpet cleaning, glass & window cleaning, sanitization, general mold remediation, and targeted treatment for black mold (Stachybotrys), Aspergillus, Penicillium, Fusarium, Aureobasidium and Trichoderma.',
   },
   {
     q: 'Are your cleaning professionals trained?',

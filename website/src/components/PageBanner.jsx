@@ -6,7 +6,7 @@ import { images } from '../data/content'
 export default function PageBanner({ title, crumb, image }) {
   return (
     <section
-      className="page-banner relative overflow-hidden pt-36 pb-16 md:pt-40 md:pb-20"
+      className="page-banner relative overflow-hidden pt-24 pb-16 sm:pt-36 md:pt-40 md:pb-20"
       style={{ '--banner-image': `url(${image || images.banner})` }}
     >
       <div className="pointer-events-none absolute -right-10 top-0 h-full w-1/2 bg-gradient-to-l from-brand/20 to-transparent" />

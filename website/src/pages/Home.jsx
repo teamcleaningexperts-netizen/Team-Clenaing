@@ -23,7 +23,7 @@ const previewServices = homeServices.slice(0, 6)
 export default function Home() {
   return (
     <div className="overflow-x-hidden bg-white">
-      <section className="relative z-10 bg-gradient-to-b from-brand-light via-[#fffaf3] to-[#eef4fb] pt-32 md:pt-36">
+      <section className="relative z-10 bg-gradient-to-b from-brand-light via-[#fffaf3] to-[#eef4fb] pt-24 sm:pt-32 md:pt-36">
         <div className="relative mx-auto grid w-full max-w-7xl items-center gap-10 px-4 pb-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pb-20">
           <div>
             <motion.h1
@@ -251,7 +251,9 @@ export default function Home() {
           <Reveal className="mb-14 text-center md:mb-20">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">Mold Expertise</p>
             <h2 className="mt-2 text-3xl font-extrabold text-navy sm:text-4xl">Types of Mold</h2>
-            <p className="mt-2 text-muted">Top 4 most common types found in homes and offices</p>
+            <p className="mt-2 text-muted">
+              Ten mold types we treat — symptoms to watch for and professional remediation for each.
+            </p>
           </Reveal>
           <MoldTypes />
         </div>

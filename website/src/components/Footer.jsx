@@ -6,7 +6,7 @@ import SocialIcons from './SocialIcons'
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-deep text-white">
+    <footer className="bg-navy-deep pb-[4.75rem] text-white sm:pb-0">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <img src={logo} alt="Team Cleaning Experts" className="h-12 w-auto" />
@@ -68,16 +68,29 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-white/55 sm:flex-row sm:px-6 lg:px-8">
-          <p>© {new Date().getFullYear()} Team Cleaning Experts. All Rights Reserved.</p>
-          <div className="flex gap-4">
-            <Link to="/privacy" className="hover:text-brand">
-              Privacy Policy
-            </Link>
-            <Link to="/terms" className="hover:text-brand">
-              Terms & Conditions
-            </Link>
+        <div className="mx-auto max-w-7xl px-4 py-5 text-xs text-white/55 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
+            <p>© {new Date().getFullYear()} Team Cleaning Experts. All Rights Reserved.</p>
+            <div className="flex gap-4">
+              <Link to="/privacy" className="hover:text-brand">
+                Privacy Policy
+              </Link>
+              <Link to="/terms" className="hover:text-brand">
+                Terms & Conditions
+              </Link>
+            </div>
           </div>
+          <p className="mt-3 text-center sm:text-left">
+            Design &amp; Developed by{' '}
+            <a
+              href="https://jstclick.in/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold text-white/80 transition hover:text-brand"
+            >
+              JST CLICK
+            </a>
+          </p>
         </div>
       </div>
     </footer>

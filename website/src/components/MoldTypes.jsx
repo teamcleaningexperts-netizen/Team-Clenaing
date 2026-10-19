@@ -8,7 +8,7 @@ export default function MoldTypes() {
         const imageLeft = i % 2 === 1
         return (
           <Reveal key={m.number}>
-            <article className="grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
+            <article className="grid items-start gap-10 lg:grid-cols-2 lg:gap-20">
               <div className={imageLeft ? 'lg:order-1' : 'lg:order-2'}>
                 <div className="overflow-hidden rounded-[32px] shadow-[0_16px_40px_rgba(12,45,74,0.1)] ring-1 ring-line">
                   <img
@@ -19,7 +19,7 @@ export default function MoldTypes() {
                 </div>
               </div>
               <div
-                className={`max-w-md ${
+                className={`max-w-lg ${
                   imageLeft ? 'lg:order-2 lg:justify-self-start' : 'lg:order-1 lg:justify-self-end'
                 }`}
               >
@@ -35,7 +35,27 @@ export default function MoldTypes() {
                   <span className="text-navy">Mold</span>
                 </h3>
                 <p className="mt-6 text-[15px] leading-7 text-muted">{m.text}</p>
-                <p className="mt-6 text-sm font-semibold text-brand">Risks: {m.risk}</p>
+
+                <div className="mt-6 rounded-2xl border border-brand/20 bg-brand-light/60 p-5">
+                  <p className="text-sm font-extrabold uppercase tracking-wide text-navy">
+                    Health issues you may face
+                  </p>
+                  <ul className="mt-3 space-y-2.5 text-[14px] leading-relaxed text-ink">
+                    {m.healthIssues.map((issue) => (
+                      <li key={issue} className="flex gap-2.5">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" aria-hidden="true" />
+                        <span>{issue}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {m.service && (
+                  <p className="mt-5 text-[14px] leading-relaxed text-muted">
+                    <span className="font-bold text-navy">How we help: </span>
+                    {m.service}
+                  </p>
+                )}
               </div>
             </article>
           </Reveal>

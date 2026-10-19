@@ -4,6 +4,8 @@ import { ArrowRight, Clock3, Mail, Menu, Phone, X } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { company, navLinks } from '../data/content'
 import SocialIcons from './SocialIcons'
+import MobileContactButtons from './MobileContactButtons'
+import WhatsAppIcon from './WhatsAppIcon'
 import logo from '../assets/logo.png'
 
 export default function Navbar() {
@@ -24,22 +26,16 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
-      <div className="bg-navy text-white">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-4 py-2 text-[12px] sm:px-6 lg:px-8">
-          <p className="flex min-w-0 items-center gap-2 font-medium text-white/85">
+      <div className="hidden bg-navy text-white sm:block">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-2 px-4 py-2 text-[12px] sm:justify-between sm:px-6 lg:px-8">
+          <p className="hidden min-w-0 items-center gap-2 font-medium text-white/85 sm:flex">
             <Clock3 size={14} className="shrink-0 text-brand" />
             <span className="truncate">
               {company.hours} · Serving {company.locations.join(', ')}
             </span>
           </p>
-          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-            <a
-              href={company.phoneHref}
-              className="inline-flex items-center gap-1.5 font-semibold text-white transition hover:text-brand"
-            >
-              <Phone size={14} className="text-brand" />
-              {company.phone}
-            </a>
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start sm:gap-4">
+            <MobileContactButtons />
             <a
               href={company.emailHref}
               className="hidden items-center gap-1.5 font-medium text-white/85 transition hover:text-brand md:inline-flex"
@@ -124,9 +120,24 @@ export default function Navbar() {
                     {link.label}
                   </NavLink>
                 ))}
-                <a href={company.phoneHref} className="rounded-xl px-4 py-3 text-sm font-semibold text-navy">
-                  {company.phone}
-                </a>
+                <div className="mt-2 grid grid-cols-2 gap-2 px-1">
+                  <a
+                    href={company.phoneHref}
+                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#2563eb] px-3 py-3 text-sm font-bold text-white"
+                  >
+                    <Phone size={17} strokeWidth={2.5} aria-hidden="true" />
+                    Call
+                  </a>
+                  <a
+                    href={company.whatsappHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-3 py-3 text-sm font-bold text-white"
+                  >
+                    <WhatsAppIcon className="h-[17px] w-[17px]" />
+                    WhatsApp
+                  </a>
+                </div>
                 <Link
                   to="/contact"
                   className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-5 py-3 text-sm font-bold text-white"
