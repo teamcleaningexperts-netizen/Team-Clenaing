@@ -398,7 +398,7 @@ export const faqs = [
 ]
 
 export const images = {
-  hero: '/images/hero.jpg',
+  hero: '/images/hero-mold.jpg',
   heroAlt: '/images/team.jpg',
   team: '/images/team.jpg',
   aboutStory: '/images/about.jpg',

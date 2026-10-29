@@ -93,8 +93,8 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-[40px] border border-white/80 shadow-[0_18px_50px_rgba(15,40,70,0.12)] ring-1 ring-white/60">
                 <img
                   src={images.hero}
-                  alt="Professional cleaner at work"
-                  className="h-[430px] w-full object-cover object-top sm:h-[500px] lg:h-[540px]"
+                  alt="Team Cleaning Experts technician removing mold from a window shutter"
+                  className="h-[430px] w-full object-cover object-center sm:h-[500px] lg:h-[540px]"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-white/55 px-5 py-4 backdrop-blur-md">
                   <div className="flex items-center gap-3">
