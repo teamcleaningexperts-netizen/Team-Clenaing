@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, Phone } from 'lucide-react'
 import Reveal, { fadeUp, stagger } from '../components/Reveal'
 import ServiceIcon from '../components/ServiceIcon'
 import MoldTypes from '../components/MoldTypes'
+import MoldDanger from '../components/MoldDanger'
 import FaqList from '../components/FaqList'
 import {
   aboutChecks,
@@ -151,10 +152,10 @@ export default function Home() {
           <Reveal>
             <div className="relative mx-auto max-w-lg">
               <div className="overflow-hidden rounded-[32px] shadow-xl">
-                <img src={images.team} alt="Team Cleaning Experts staff" className="h-[420px] w-full object-cover" />
+                <img src={images.hero} alt="Team Cleaning Experts technician removing mold from a wall" className="h-[420px] w-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -left-2 rounded-[22px] bg-brand px-6 py-5 text-white shadow-lg sm:left-6">
-                <p className="text-4xl font-extrabold leading-none">5+</p>
+                <p className="text-4xl font-extrabold leading-none">20+</p>
                 <p className="mt-1 text-sm font-semibold">
                   Years of
                   <br />
@@ -193,6 +194,8 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+
+      <MoldDanger />
 
       <section className="bg-brand-light py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
