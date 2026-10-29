@@ -6,6 +6,7 @@ import ServiceIcon from '../components/ServiceIcon'
 import MoldTypes from '../components/MoldTypes'
 import MoldDanger from '../components/MoldDanger'
 import FaqList from '../components/FaqList'
+import CountUp from '../components/CountUp'
 import {
   aboutChecks,
   company,
@@ -18,7 +19,7 @@ import {
 
 const homeFaqs = faqs.slice(0, 6)
 
-const homeServices = services.filter((s) => !s.featured)
+const homeServices = services.filter((s) => !s.featured && !s.extra)
 const previewServices = homeServices.slice(0, 6)
 
 export default function Home() {
@@ -46,7 +47,7 @@ export default function Home() {
               className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg"
             >
               We provide reliable, specialist mold inspection, removal and prevention for homes, offices
-              and commercial spaces across Bangalore, Mumbai, Delhi, Noida and Gurugram.
+              and commercial spaces — service available all over India.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -152,7 +153,7 @@ export default function Home() {
           <Reveal>
             <div className="relative mx-auto max-w-lg">
               <div className="overflow-hidden rounded-[32px] shadow-xl">
-                <img src={images.hero} alt="Team Cleaning Experts technician removing mold from a wall" className="h-[420px] w-full object-cover" />
+                <img src={images.aboutHome} alt="Team Cleaning Experts technician removing mold from a wall" className="h-[420px] w-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -left-2 rounded-[22px] bg-brand px-6 py-5 text-white shadow-lg sm:left-6">
                 <p className="text-4xl font-extrabold leading-none">20+</p>
@@ -192,6 +193,29 @@ export default function Home() {
               Learn More <ArrowRight size={16} />
             </Link>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="bg-navy py-14 md:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <Reveal className="mb-10 text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">Our Impact</p>
+            <h2 className="mt-2 text-3xl font-extrabold text-white sm:text-4xl">
+              Growing Every Day With Your Trust
+            </h2>
+          </Reveal>
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+            {stats.map((item, i) => (
+              <Reveal key={item.label} delay={i * 0.08} className="text-center">
+                <div className="rounded-[24px] bg-white/5 px-4 py-7 ring-1 ring-white/10">
+                  <p className="text-3xl font-extrabold tabular-nums text-brand sm:text-4xl">
+                    <CountUp value={item.value} />
+                  </p>
+                  <p className="mt-2 text-sm font-semibold text-white/80">{item.label}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -262,27 +286,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-navy py-14 md:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Reveal className="mb-10 text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">Our Impact</p>
-            <h2 className="mt-2 text-3xl font-extrabold text-white sm:text-4xl">
-              Growing Every Day With Your Trust
-            </h2>
-          </Reveal>
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-            {stats.map((item, i) => (
-              <Reveal key={item.label} delay={i * 0.08} className="text-center">
-                <div className="rounded-[24px] bg-white/5 px-4 py-7 ring-1 ring-white/10">
-                  <p className="text-3xl font-extrabold text-brand sm:text-4xl">{item.value}</p>
-                  <p className="mt-2 text-sm font-semibold text-white/80">{item.label}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="bg-[#f4f8fb] py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-start gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
@@ -340,7 +343,7 @@ export default function Home() {
             </div>
             <img
               src={images.cta}
-              alt="Cleaning supplies"
+              alt="Team Cleaning Experts technician cleaning a window"
               className="relative mt-8 h-44 w-auto rounded-2xl object-cover md:mt-0 md:h-52"
             />
           </div>

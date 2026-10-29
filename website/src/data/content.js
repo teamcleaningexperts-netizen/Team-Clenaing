@@ -4,13 +4,16 @@ export const company = {
   phoneHref: 'tel:+917996688885',
   whatsappHref:
     'https://wa.me/917996688885?text=Hi%20Team%20Cleaning%20Experts%2C%20I%20would%20like%20to%20book%20a%20mold%20remediation%20service.',
-  email: 'service@teamcleaningexperts.in',
-  emailHref: 'mailto:service@teamcleaningexperts.in',
-  address: '203, 2nd floor, near MSIL, Panathur Post, Bangalore, Karnataka 560087',
+  email: 'teamcleaningexperts@gmail.com',
+  emailHref: 'mailto:teamcleaningexperts@gmail.com',
   hours: '24 x 7 on Bookings',
-  locations: ['Bangalore', 'Mumbai', 'New Delhi', 'Noida', 'Gurugram'],
-  mapSrc:
-    'https://maps.google.com/maps?q=Panathur%20Bangalore%20560087&t=&z=14&ie=UTF8&iwloc=&output=embed',
+  serviceArea: 'All Over India',
+  social: {
+    facebook: 'https://www.facebook.com/teamcleaningexperts',
+    twitter: 'https://twitter.com/TCleaningExpert',
+    instagram: 'https://www.instagram.com/',
+    youtube: 'https://www.youtube.com/',
+  },
 }
 
 export const navLinks = [
@@ -23,9 +26,9 @@ export const navLinks = [
 ]
 
 export const stats = [
-  { value: '5+', label: 'Years Experience' },
-  { value: '2,476', label: 'Happy Customers' },
-  { value: '13,745', label: 'Sq Ft Remediated' },
+  { value: '20+', label: 'Years Experience' },
+  { value: '12,000+', label: 'Happy Customers' },
+  { value: '1,00,000+', label: 'Sq Ft Remediated' },
   { value: '1,120', label: 'Emergency Calls / Month' },
 ]
 
@@ -61,7 +64,7 @@ export const services = [
     title: 'Mold Remediation',
     short: 'Recover your space from mold damage',
     description:
-      'Specialist mold inspection, containment, removal and prevention for homes and offices across Bangalore and other cities.',
+      'Specialist mold inspection, containment, removal and prevention for homes and offices all over India.',
     icon: 'droplets',
     image: '/images/mold.jpg',
     featured: true,
@@ -126,6 +129,86 @@ export const services = [
     icon: 'droplets',
     image: '/mold-02.jpg',
   },
+  {
+    id: 'mold-inspection-testing',
+    title: 'Mold Inspection & Moisture Testing',
+    short: 'Find hidden mold and its moisture source',
+    description:
+      'Detailed visual inspection with moisture readings of walls, floors and ceilings to locate hidden mold, trace leaks and plan the right treatment.',
+    icon: 'shield',
+    image: '/images/services/mold-inspection.jpg',
+    extra: true,
+  },
+  {
+    id: 'bathroom-kitchen-mold-removal',
+    title: 'Bathroom & Kitchen Mold Removal',
+    short: 'Tiles, grout, sinks and cabinets',
+    description:
+      'Removes mold from tile grout, silicone, under-sink cabinets and wet corners, then treats surfaces so damp bathrooms and kitchens stay cleaner for longer.',
+    icon: 'sparkles',
+    image: '/images/services/bathroom-kitchen-mold.jpg',
+    extra: true,
+  },
+  {
+    id: 'wall-ceiling-mold-treatment',
+    title: 'Wall & Ceiling Mold Treatment',
+    short: 'Damp patches, seepage and peeling paint',
+    description:
+      'Treats mold on painted walls, ceilings and corners caused by seepage or roof leaks — cleaning, antimicrobial treatment and advice before repainting.',
+    icon: 'home',
+    image: '/mold-01.jpg',
+    extra: true,
+  },
+  {
+    id: 'ac-duct-hvac-mold-cleaning',
+    title: 'AC Duct & HVAC Mold Cleaning',
+    short: 'Cleaner air from vents and ducts',
+    description:
+      'Cleans mold and dust from AC vents, grilles, drip trays and accessible ducts so the system stops spreading spores and musty smells around the room.',
+    icon: 'glass',
+    image: '/images/services/ac-duct-mold.jpg',
+    extra: true,
+  },
+  {
+    id: 'basement-crawl-space-mold',
+    title: 'Basement & Crawl Space Mold Remediation',
+    short: 'Damp lower levels, joists and insulation',
+    description:
+      'Contained remediation of basements, crawl spaces and under-floor areas, including removal of mouldy insulation and treatment of wood and masonry.',
+    icon: 'building',
+    image: '/images/services/crawl-space-mold.jpg',
+    extra: true,
+  },
+  {
+    id: 'water-damage-mold-restoration',
+    title: 'Water Damage & Flood Mold Restoration',
+    short: 'Fast response after leaks and floods',
+    description:
+      'Emergency response after pipe bursts, leaks and flooding — removal of soaked materials, drying with air movers and treatment to stop mold before it spreads.',
+    icon: 'droplets',
+    image: '/images/services/water-damage-mold.jpg',
+    extra: true,
+  },
+  {
+    id: 'commercial-office-mold-remediation',
+    title: 'Commercial & Office Mold Remediation',
+    short: 'Offices, shops, pantries and warehouses',
+    description:
+      'Mold remediation for offices, retail spaces, pantries and warehouses, scheduled around working hours to keep downtime low and staff safe.',
+    icon: 'building',
+    image: '/images/services/commercial-mold.jpg',
+    extra: true,
+  },
+  {
+    id: 'mold-prevention-dehumidification',
+    title: 'Mold Prevention & Dehumidification',
+    short: 'Keep mold from coming back',
+    description:
+      'Humidity control, dehumidifier guidance, ventilation advice and protective anti-fungal treatment so treated areas stay dry and mold-free.',
+    icon: 'shield',
+    image: '/images/services/mold-prevention.jpg',
+    extra: true,
+  },
 ]
 
 export const values = [
@@ -169,8 +252,8 @@ export const whyPoints = [
     text: 'Emergency mold calls are handled around the clock. Book anytime at +91 7996688885.',
   },
   {
-    title: 'Multi-City Coverage',
-    text: 'Serving Bangalore, Mumbai, New Delhi, Noida and Gurugram with the same professional standard.',
+    title: 'Pan-India Coverage',
+    text: 'Service available all over India with the same professional standard.',
   },
   {
     title: 'Flexible, Affordable Packages',
@@ -341,7 +424,7 @@ export const moldTypes = [
 export const faqs = [
   {
     q: 'What types of mold services do you offer?',
-    a: 'We specialise in mold remediation only: general mold inspection and removal, plus targeted treatment for black mold (Stachybotrys), Aspergillus, Penicillium, Fusarium, Aureobasidium and Trichoderma.',
+    a: 'We specialise in mold remediation only: mold inspection and moisture testing, bathroom and kitchen mold, wall and ceiling mold, AC duct and HVAC mold, basements and crawl spaces, water damage and flood restoration, commercial mold remediation and prevention — plus targeted treatment for black mold (Stachybotrys), Aspergillus, Penicillium, Fusarium, Aureobasidium and Trichoderma.',
   },
   {
     q: 'Are your mold remediation professionals trained?',
@@ -353,11 +436,11 @@ export const faqs = [
   },
   {
     q: 'How can I book a mold inspection?',
-    a: 'Call +91 7996688885, email service@teamcleaningexperts.in, or send a message through our Contact page. Bookings are open 24 x 7.',
+    a: 'Call +91 7996688885, email teamcleaningexperts@gmail.com, or send a message through our Contact page. Bookings are open 24 x 7.',
   },
   {
     q: 'What areas do you serve?',
-    a: 'We currently serve Bangalore, Mumbai, New Delhi, Noida and Gurugram. Our main office is at 203, 2nd floor, near MSIL, Panathur Post, Bangalore, Karnataka 560087.',
+    a: 'Our mold remediation service is available all over India. Call or WhatsApp us and we will schedule a visit at your location.',
   },
   {
     q: 'Can I get a customized remediation plan?',
@@ -401,9 +484,10 @@ export const images = {
   hero: '/images/hero-mold.jpg',
   heroAlt: '/images/team.jpg',
   team: '/images/team.jpg',
-  aboutStory: '/images/about.jpg',
-  supplies: '/images/about.jpg',
-  cta: '/images/cta.jpg',
+  aboutHome: '/images/about-mold.jpg',
+  aboutStory: '/images/about-mold.jpg',
+  supplies: '/images/about-mold.jpg',
+  cta: '/images/cta-mold.jpg',
   growth: '/images/banner.jpg',
   banner: '/images/banner.jpg',
   contactBanner: '/images/team.jpg',

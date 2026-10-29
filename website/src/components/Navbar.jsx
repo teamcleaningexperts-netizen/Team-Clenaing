@@ -31,7 +31,7 @@ export default function Navbar() {
           <p className="hidden min-w-0 items-center gap-2 font-medium text-white/85 sm:flex">
             <Clock3 size={14} className="shrink-0 text-brand" />
             <span className="truncate">
-              {company.hours} · Serving {company.locations.join(', ')}
+              {company.hours} · Service available {company.serviceArea}
             </span>
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start sm:gap-4">

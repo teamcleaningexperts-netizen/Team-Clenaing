@@ -31,7 +31,7 @@ export default function Services() {
             </h2>
             <p className="mt-4 text-muted">
               From general mold removal to targeted treatment for specific mold types — professional
-              remediation trusted across Bangalore and other cities.
+              remediation trusted all over India.
             </p>
           </Reveal>
 

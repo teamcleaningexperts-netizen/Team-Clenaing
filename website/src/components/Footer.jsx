@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 import { company, navLinks, services } from '../data/content'
 import logo from '../assets/logo.png'
 import SocialIcons from './SocialIcons'
@@ -58,10 +58,6 @@ export default function Footer() {
                 {company.email}
               </a>
             </li>
-            <li className="flex gap-3">
-              <MapPin size={18} className="mt-0.5 shrink-0 text-brand" />
-              <span>{company.address}</span>
-            </li>
           </ul>
           <p className="mt-4 text-xs uppercase tracking-wide text-white/50">{company.hours}</p>
         </div>
@@ -80,17 +76,6 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <p className="mt-3 text-center sm:text-left">
-            Design &amp; Developed by{' '}
-            <a
-              href="https://jstclick.in/"
-              target="_blank"
-              rel="noreferrer"
-              className="font-semibold text-white/80 transition hover:text-brand"
-            >
-              JST CLICK
-            </a>
-          </p>
         </div>
       </div>
     </footer>

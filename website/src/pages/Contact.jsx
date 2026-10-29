@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 import PageBanner from '../components/PageBanner'
 import Reveal from '../components/Reveal'
 import SocialIcons from '../components/SocialIcons'
@@ -60,27 +60,13 @@ export default function Contact() {
                   </a>
                 </div>
               </li>
-              <li className="flex gap-4">
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-light text-brand">
-                  <MapPin size={20} />
-                </span>
-                <div>
-                  <p className="text-sm font-semibold text-muted">Location</p>
-                  <p className="font-bold text-navy">{company.address}</p>
-                </div>
-              </li>
             </ul>
 
-            <p className="mt-8 text-sm font-bold text-navy">Cities we serve</p>
+            <p className="mt-8 text-sm font-bold text-navy">Service area</p>
             <div className="mt-3 flex flex-wrap gap-2">
-              {company.locations.map((city) => (
-                <span
-                  key={city}
-                  className="rounded-full bg-brand-light px-3 py-1 text-xs font-bold text-brand"
-                >
-                  {city}
-                </span>
-              ))}
+              <span className="rounded-full bg-brand-light px-3 py-1 text-xs font-bold text-brand">
+                {company.serviceArea}
+              </span>
             </div>
 
             <SocialIcons className="mt-8" />
@@ -153,20 +139,6 @@ export default function Contact() {
             </form>
           </Reveal>
         </div>
-      </section>
-
-      <section className="px-4 pb-16 sm:px-6 lg:px-8">
-        <Reveal>
-          <div className="mx-auto max-w-7xl overflow-hidden rounded-[28px] border border-line">
-            <iframe
-              title="Team Cleaning Experts location"
-              src={company.mapSrc}
-              className="h-[360px] w-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
-        </Reveal>
       </section>
     </div>
   )
