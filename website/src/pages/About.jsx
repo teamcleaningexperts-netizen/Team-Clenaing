@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { CheckCircle2, Quote } from 'lucide-react'
 import PageBanner from '../components/PageBanner'
 import Reveal from '../components/Reveal'
+import CountUp from '../components/CountUp'
 import { aboutChecks, aboutStats, images, values } from '../data/content'
 import { Award, HeartHandshake, ShieldCheck, BadgeCheck } from 'lucide-react'
 
@@ -59,7 +60,9 @@ export default function About() {
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-4 sm:px-6 md:grid-cols-4 lg:px-8">
           {aboutStats.map((item, i) => (
             <Reveal key={item.label} delay={i * 0.08} className="rounded-2xl bg-white p-6 text-center shadow-sm">
-              <p className="text-3xl font-extrabold text-brand sm:text-4xl">{item.value}</p>
+              <p className="text-3xl font-extrabold tabular-nums text-brand sm:text-4xl">
+                <CountUp value={item.value} />
+              </p>
               <p className="mt-1 text-sm font-semibold text-navy">{item.label}</p>
             </Reveal>
           ))}

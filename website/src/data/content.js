@@ -33,14 +33,14 @@ export const stats = [
 ]
 
 export const growthStats = [
-  { value: '2,476', label: 'Happy Customers', icon: 'users' },
-  { value: '13,745', label: 'Sq Feet of Mold Remediation', icon: 'area' },
+  { value: '12,000+', label: 'Happy Customers', icon: 'users' },
+  { value: '1,00,000+', label: 'Sq Feet of Mold Remediation', icon: 'area' },
   { value: '1,120', label: 'Emergency Calls Per Month', icon: 'phone' },
 ]
 
 export const aboutStats = [
-  { value: '5+', label: 'Years Experience' },
-  { value: '2,476+', label: 'Happy Clients' },
+  { value: '20+', label: 'Years Experience' },
+  { value: '12,000+', label: 'Happy Clients' },
   { value: '1,120', label: 'Emergency Calls' },
   { value: '100%', label: 'Client Satisfaction' },
 ]
@@ -476,7 +476,7 @@ export const faqs = [
   },
   {
     q: 'How do you ensure customer satisfaction?',
-    a: 'Clear inspection, honest quotes, trained staff, safe products and follow-up prevention advice. We have served 2,476+ happy customers and handle 1,120+ emergency calls every month.',
+    a: 'Clear inspection, honest quotes, trained staff, safe products and follow-up prevention advice. With 20+ years of experience, we have served 12,000+ happy customers and handle 1,120+ emergency calls every month.',
   },
 ]
 
