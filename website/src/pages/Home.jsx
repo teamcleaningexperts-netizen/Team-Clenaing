@@ -34,7 +34,7 @@ export default function Home() {
             >
               Professional
               <br />
-              Cleaning Services
+              Mold Remediation
               <br />
               for a <span className="text-brand">Healthier Tomorrow</span>
             </motion.h1>
@@ -44,8 +44,8 @@ export default function Home() {
               transition={{ delay: 0.15, duration: 0.6 }}
               className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg"
             >
-              We provide reliable, high-quality cleaning solutions for homes, offices and commercial
-              spaces — plus specialist mold clean-up across Bangalore, Mumbai, Delhi, Noida and Gurugram.
+              We provide reliable, specialist mold inspection, removal and prevention for homes, offices
+              and commercial spaces across Bangalore, Mumbai, Delhi, Noida and Gurugram.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -168,13 +168,13 @@ export default function Home() {
               About Team Cleaning Experts
             </p>
             <h2 className="mt-3 text-3xl font-extrabold text-navy sm:text-4xl">
-              Your Trusted Cleaning Partner
+              Your Trusted Mold Remediation Partner
             </h2>
             <p className="mt-4 text-[15px] leading-relaxed text-muted">
-              We are committed to delivering top-quality cleaning services with professional and trained
-              staff. Our goal is to create cleaner, healthier and happier spaces for you. Team Cleaning
-              Experts was founded with a simple goal: to provide reliable, affordable and high-quality
-              cleaning — including mold clean-up that protects your family and workplace.
+              We are committed to delivering top-quality mold remediation with professional and trained
+              staff. Our goal is to create healthier, mold-free spaces for you. Team Cleaning Experts was
+              founded with a simple goal: to provide reliable, affordable and high-quality mold clean-up
+              that protects your family and workplace.
             </p>
             <ul className="mt-6 space-y-3">
               {aboutChecks.map((item) => (
@@ -199,8 +199,8 @@ export default function Home() {
           <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
             <Reveal>
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">What We Do</p>
-              <h2 className="mt-2 text-3xl font-extrabold text-navy sm:text-4xl">Our Cleaning Services</h2>
-              <p className="mt-2 text-muted">Comprehensive cleaning solutions for every need</p>
+              <h2 className="mt-2 text-3xl font-extrabold text-navy sm:text-4xl">Our Mold Remediation Services</h2>
+              <p className="mt-2 text-muted">Targeted treatment for every common type of indoor mold</p>
             </Reveal>
             <Reveal delay={0.1}>
               <Link
@@ -291,7 +291,7 @@ export default function Home() {
                 Questions
               </h2>
               <p className="mt-4 max-w-md text-[15px] leading-relaxed text-muted">
-                Quick answers about our cleaning services, booking, and mold clean-up. Still unsure?
+                Quick answers about mold, booking, and our remediation process. Still unsure?
                 Our team is available 24 x 7.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -322,10 +322,10 @@ export default function Home() {
             <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-brand/20" />
             <div className="relative max-w-xl">
               <h2 className="text-3xl font-extrabold sm:text-4xl">
-                Get Your Space Professionally Cleaned Today!
+                Get Your Space Mold-Free Today!
               </h2>
               <p className="mt-3 text-white/75">
-                Reliable. Affordable. Trusted Cleaning Services. Recover your home or office from any
+                Reliable. Affordable. Trusted Mold Remediation. Recover your home or office from any
                 mold damage — call {company.phone}
               </p>
               <Link

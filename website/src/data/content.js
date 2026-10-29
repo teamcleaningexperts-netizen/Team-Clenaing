@@ -3,7 +3,7 @@ export const company = {
   phone: '+91 7996688885',
   phoneHref: 'tel:+917996688885',
   whatsappHref:
-    'https://wa.me/917996688885?text=Hi%20Team%20Cleaning%20Experts%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service.',
+    'https://wa.me/917996688885?text=Hi%20Team%20Cleaning%20Experts%2C%20I%20would%20like%20to%20book%20a%20mold%20remediation%20service.',
   email: 'service@teamcleaningexperts.in',
   emailHref: 'mailto:service@teamcleaningexperts.in',
   address: '203, 2nd floor, near MSIL, Panathur Post, Bangalore, Karnataka 560087',
@@ -50,72 +50,12 @@ export const trustPoints = [
 
 export const aboutChecks = [
   'Trained & Verified Professionals',
-  'Safe & Eco-Friendly Cleaning Products',
+  'Safe & Eco-Friendly Treatment Products',
   'Flexible & Affordable Packages',
-  'Residential, Commercial & Industrial Cleaning',
+  'Residential, Commercial & Industrial Mold Remediation',
 ]
 
 export const services = [
-  {
-    id: 'home-cleaning',
-    title: 'Home Cleaning',
-    bar: ['Home', 'Cleaning'],
-    short: 'Keep your home fresh and healthy',
-    description:
-      'Complete house cleaning for kitchens, bedrooms, bathrooms and living areas so your family comes home to a healthier space.',
-    icon: 'home',
-    image: '/images/home.jpg',
-  },
-  {
-    id: 'office-cleaning',
-    title: 'Office Cleaning',
-    bar: ['Office', 'Cleaning'],
-    short: 'Clean workplaces for better productivity',
-    description:
-      'Daily and scheduled office cleaning that keeps workstations, cabins, restrooms and common areas professional and hygienic.',
-    icon: 'building',
-    image: '/images/office.jpg',
-  },
-  {
-    id: 'deep-cleaning',
-    title: 'Deep Cleaning',
-    bar: ['Deep', 'Cleaning'],
-    short: 'Specialized deep cleaning services',
-    description:
-      'Intensive top-to-bottom cleaning for neglected corners, kitchens, bathrooms and post-construction spaces.',
-    icon: 'sparkles',
-    image: '/images/deep.jpg',
-  },
-  {
-    id: 'sofa-carpet',
-    title: 'Sofa & Carpet Cleaning',
-    bar: ['Sofa &', 'Carpet'],
-    short: 'Restore freshness and remove stains',
-    description:
-      'Professional upholstery and carpet care that lifts dust, stains and allergens from sofas, rugs and fabric surfaces.',
-    icon: 'sofa',
-    image: '/images/sofa.jpg',
-  },
-  {
-    id: 'glass-window',
-    title: 'Glass & Window Cleaning',
-    bar: ['Glass &', 'Window'],
-    short: 'Crystal clear and streak-free finish',
-    description:
-      'Interior and exterior glass cleaning for homes, offices and commercial facades with a streak-free shine.',
-    icon: 'glass',
-    image: '/images/window.jpg',
-  },
-  {
-    id: 'sanitization',
-    title: 'Sanitization & Disinfection',
-    bar: ['Sanitization'],
-    short: 'Eliminate germs and ensure safety',
-    description:
-      'Hospital-grade sanitization for high-touch surfaces, offices and homes to reduce bacteria, viruses and allergens.',
-    icon: 'shield',
-    image: '/images/sanitize.jpg',
-  },
   {
     id: 'mold-remediation',
     title: 'Mold Remediation',
@@ -129,63 +69,69 @@ export const services = [
   {
     id: 'black-mold-remediation',
     title: 'Black Mold (Stachybotrys) Remediation',
+    bar: ['Black', 'Mold'],
     short: 'Safe removal of toxic black mold',
     description:
       'Contained removal of Stachybotrys from drywall and ceilings after floods or leaks — reduces breathing problems, headaches and serious allergy risks.',
     icon: 'droplets',
-    image: '/images/mold.jpg',
+    image: '/mold-01.jpg',
   },
   {
     id: 'aspergillus-mold-treatment',
     title: 'Aspergillus Mold Treatment',
+    bar: ['Aspergillus', 'Mold'],
     short: 'Ducts, walls and HVAC mold care',
     description:
       'Targets Aspergillus in AC ducts and damp walls to ease wheezing, sinus issues and long-term respiratory irritation.',
     icon: 'droplets',
-    image: '/images/mold.jpg',
+    image: '/mold-02.jpg',
   },
   {
     id: 'penicillium-mold-remediation',
     title: 'Penicillium Mold Remediation',
+    bar: ['Penicillium', 'Mold'],
     short: 'Bedrooms, storage and wallpaper mold',
     description:
       'Clears Penicillium from mattresses, boxes and wallpaper to stop hay fever symptoms, asthma flare-ups and musty odours.',
     icon: 'droplets',
-    image: '/images/mold.jpg',
+    image: '/mold-03.jpg',
   },
   {
     id: 'fusarium-mold-cleanup',
     title: 'Fusarium Mold Cleanup',
+    bar: ['Fusarium', 'Mold'],
     short: 'Flooded floors and carpet mold',
     description:
       'Remediates Fusarium after water damage on carpets and subfloors — lowers risk of skin, eye and respiratory irritation.',
     icon: 'droplets',
-    image: '/images/mold.jpg',
+    image: '/mold-04.jpg',
   },
   {
     id: 'aureobasidium-mold-removal',
     title: 'Aureobasidium Mold Removal',
+    bar: ['Aureobasidium', 'Mold'],
     short: 'Window frames and painted walls',
     description:
       'Treats dark spots behind paint and wallpaper to prevent skin rashes, eye irritation and recurring allergy symptoms.',
     icon: 'droplets',
-    image: '/images/mold.jpg',
+    image: '/mold-01.jpg',
   },
   {
     id: 'trichoderma-mold-remediation',
     title: 'Trichoderma Mold Remediation',
+    bar: ['Trichoderma', 'Mold'],
     short: 'Wood, cabinets and crawl spaces',
     description:
       'Stops Trichoderma on joists and wet wood to protect air quality, reduce cough and fatigue, and prevent structural damage.',
     icon: 'droplets',
-    image: '/images/mold.jpg',
+    image: '/mold-02.jpg',
   },
 ]
 
 export const values = [
   {
     title: 'Quality',
-    text: 'High standards in every service we deliver, from routine cleaning to complex mold remediation.',
+    text: 'High standards in every service we deliver, from a single damp wall to complex, large-scale mold remediation.',
     icon: 'award',
   },
   {
@@ -208,7 +154,7 @@ export const values = [
 export const whyPoints = [
   {
     title: 'Trained & Verified Professionals',
-    text: 'Every technician is trained, background-checked and equipped to handle residential and commercial jobs.',
+    text: 'Every technician is trained, background-checked and equipped to handle residential and commercial mold jobs.',
   },
   {
     title: 'Mold Remediation Specialists',
@@ -216,11 +162,11 @@ export const whyPoints = [
   },
   {
     title: 'Safe & Eco-Friendly Products',
-    text: 'We use products that are effective on dirt, bacteria and mold without putting your family at risk.',
+    text: 'We use products that are effective on mold and bacteria without putting your family at risk.',
   },
   {
     title: '24 x 7 Bookings',
-    text: 'Emergency mold and cleaning calls are handled around the clock. Book anytime at +91 7996688885.',
+    text: 'Emergency mold calls are handled around the clock. Book anytime at +91 7996688885.',
   },
   {
     title: 'Multi-City Coverage',
@@ -228,13 +174,13 @@ export const whyPoints = [
   },
   {
     title: 'Flexible, Affordable Packages',
-    text: 'One-time deep cleans, recurring home/office plans and custom mold jobs priced to the space and severity.',
+    text: 'One-time treatments, follow-up inspections and custom mold jobs priced to the space and severity.',
   },
 ]
 
 export const processSteps = [
   { step: '01', title: 'Book a Visit', text: 'Call or send a message. We schedule a free inspection at your convenience.' },
-  { step: '02', title: 'Inspect & Quote', text: 'We assess the space, moisture source or cleaning scope and share a clear quote.' },
+  { step: '02', title: 'Inspect & Quote', text: 'We assess the space, moisture source and extent of mold, and share a clear quote.' },
   { step: '03', title: 'Clean & Restore', text: 'Our team contains, cleans, remediates and sanitizes with professional equipment.' },
   { step: '04', title: 'Prevent & Follow Up', text: 'We advise on moisture control and prevention so the problem is less likely to return.' },
 ]
@@ -394,19 +340,19 @@ export const moldTypes = [
 
 export const faqs = [
   {
-    q: 'What types of cleaning services do you offer?',
-    a: 'We offer home cleaning, office cleaning, deep cleaning, sofa & carpet cleaning, glass & window cleaning, sanitization, general mold remediation, and targeted treatment for black mold (Stachybotrys), Aspergillus, Penicillium, Fusarium, Aureobasidium and Trichoderma.',
+    q: 'What types of mold services do you offer?',
+    a: 'We specialise in mold remediation only: general mold inspection and removal, plus targeted treatment for black mold (Stachybotrys), Aspergillus, Penicillium, Fusarium, Aureobasidium and Trichoderma.',
   },
   {
-    q: 'Are your cleaning professionals trained?',
-    a: 'Yes. Our technicians are trained, verified and experienced in both routine cleaning and mold remediation. We follow containment and safety protocols on every job.',
+    q: 'Are your mold remediation professionals trained?',
+    a: 'Yes. Our technicians are trained, verified and experienced in mold inspection and remediation. We follow containment and safety protocols on every job.',
   },
   {
-    q: 'Do you use eco-friendly cleaning products?',
-    a: 'Yes. We use safe, eco-friendly products that are effective on dirt, allergens and mold while remaining suitable for homes with children and pets.',
+    q: 'Do you use eco-friendly products?',
+    a: 'Yes. We use safe, eco-friendly products that are effective on mold and allergens while remaining suitable for homes with children and pets.',
   },
   {
-    q: 'How can I book a cleaning service?',
+    q: 'How can I book a mold inspection?',
     a: 'Call +91 7996688885, email service@teamcleaningexperts.in, or send a message through our Contact page. Bookings are open 24 x 7.',
   },
   {
@@ -414,12 +360,12 @@ export const faqs = [
     a: 'We currently serve Bangalore, Mumbai, New Delhi, Noida and Gurugram. Our main office is at 203, 2nd floor, near MSIL, Panathur Post, Bangalore, Karnataka 560087.',
   },
   {
-    q: 'Can I get a customized cleaning plan?',
-    a: 'Absolutely. We tailor packages to your space, frequency and problem areas — from a one-time deep clean to recurring office service or a full mold remediation plan.',
+    q: 'Can I get a customized remediation plan?',
+    a: 'Absolutely. We tailor packages to your space, frequency and problem areas — from treating a single affected room to a full-property mold remediation plan.',
   },
   {
-    q: 'Do you provide one-time cleaning services?',
-    a: 'Yes. One-time, periodic and emergency services are all available, including urgent mold clean-up.',
+    q: 'Do you provide one-time mold treatment?',
+    a: 'Yes. One-time, periodic and emergency services are all available, including urgent mold clean-up after leaks or flooding.',
   },
   {
     q: 'How do I identify black mold?',

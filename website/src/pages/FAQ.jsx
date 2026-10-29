@@ -14,7 +14,7 @@ export default function FAQ() {
           <Reveal className="mb-10 text-center">
             <h2 className="text-3xl font-extrabold text-navy">Frequently Asked Questions</h2>
             <p className="mt-3 text-muted">
-              Find answers to common questions about our cleaning and mold clean-up services.
+              Find answers to common questions about mold and our mold clean-up services.
             </p>
           </Reveal>
           <Reveal>

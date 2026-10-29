@@ -22,15 +22,15 @@ export default function About() {
           <Reveal>
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">Our Story</p>
             <h2 className="mt-3 text-3xl font-extrabold text-navy sm:text-4xl">
-              Committed to Cleaner & Healthier Spaces
+              Committed to Healthier, Mold-Free Spaces
             </h2>
             <p className="mt-4 text-[15px] leading-relaxed text-muted">
               Team Cleaning Experts was founded with a simple goal: to provide reliable, affordable and
-              high-quality cleaning services for homes, offices and commercial spaces. We believe that a
-              clean environment leads to a healthier, happier and more productive life.
+              high-quality mold remediation for homes, offices and commercial spaces. We believe that a
+              mold-free environment leads to a healthier, happier and more productive life.
             </p>
             <p className="mt-3 text-[15px] leading-relaxed text-muted">
-              We are also specialists in mold clean-up and remediation. Indoor mold can trigger allergies,
+              We are specialists in mold clean-up and remediation. Indoor mold can trigger allergies,
               asthma and more serious respiratory issues. Our teams inspect, contain, remove and help
               prevent recurrence so you can recover your home or office safely.
             </p>
@@ -71,7 +71,7 @@ export default function About() {
           <Reveal className="text-center">
             <h2 className="text-3xl font-extrabold text-navy sm:text-4xl">Our Values</h2>
             <p className="mx-auto mt-3 max-w-2xl text-muted">
-              Quality, trust, safety and customer focus guide every visit — from a regular home clean to
+              Quality, trust, safety and customer focus guide every visit — from a small damp patch to
               emergency mold remediation.
             </p>
           </Reveal>
@@ -99,7 +99,7 @@ export default function About() {
           <div className="mx-auto max-w-4xl rounded-[28px] bg-navy px-8 py-12 text-center text-white">
             <Quote className="mx-auto mb-4 text-brand" />
             <p className="text-xl font-semibold leading-relaxed sm:text-2xl">
-              “We don’t just clean spaces, we create healthier environments for a better tomorrow.”
+              “We don’t just remove mold, we create healthier environments for a better tomorrow.”
             </p>
             <Link
               to="/contact"

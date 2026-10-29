@@ -27,11 +27,11 @@ export default function Services() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-extrabold text-navy sm:text-4xl">
-              Comprehensive Cleaning Solutions for Every Space
+              Specialist Mold Remediation for Every Space
             </h2>
             <p className="mt-4 text-muted">
-              We offer a wide range of professional cleaning services tailored to meet your needs —
-              plus specialist mold remediation trusted across Bangalore and other cities.
+              From general mold removal to targeted treatment for specific mold types — professional
+              remediation trusted across Bangalore and other cities.
             </p>
           </Reveal>
 
@@ -90,9 +90,9 @@ export default function Services() {
         <Reveal>
           <div className="relative mx-auto flex max-w-7xl flex-col overflow-hidden rounded-[32px] bg-navy px-6 py-12 text-white sm:px-10 md:flex-row md:items-center md:justify-between">
             <div>
-              <h2 className="text-3xl font-extrabold">Need a Custom Cleaning Solution?</h2>
+              <h2 className="text-3xl font-extrabold">Need a Custom Remediation Plan?</h2>
               <p className="mt-3 max-w-xl text-white/75">
-                Contact us for personalized cleaning services. Recover your home or office from any mold
+                Contact us for a free mold inspection. Recover your home or office from any mold
                 damage — call {company.phone}
               </p>
             </div>

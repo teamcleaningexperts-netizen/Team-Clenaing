@@ -11,8 +11,8 @@ export default function Footer() {
         <div>
           <img src={logo} alt="Team Cleaning Experts" className="h-12 w-auto" />
           <p className="mt-4 text-sm leading-relaxed text-white/70">
-            Professional cleaning services for homes, offices and commercial spaces. We ensure clean,
-            healthy and safe environments — including specialist mold remediation.
+            Specialist mold remediation for homes, offices and commercial spaces. We ensure healthy,
+            safe and mold-free environments.
           </p>
           <SocialIcons className="mt-5 [&>a]:h-9 [&>a]:w-9 [&>a]:bg-white/10" />
         </div>

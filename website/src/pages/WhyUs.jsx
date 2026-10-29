@@ -14,11 +14,11 @@ export default function WhyUs() {
           <Reveal className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">Why Choose Us</p>
             <h2 className="mt-2 text-3xl font-extrabold text-navy sm:text-4xl">
-              The Best Mold Remediation & Cleaning Service
+              The Best Mold Remediation Service
             </h2>
             <p className="mt-4 text-muted">
               We are growing every day with your help. Families and businesses trust Team Cleaning Experts
-              for reliable cleaning and specialist mold remediation.
+              for reliable, specialist mold remediation.
             </p>
           </Reveal>
 
